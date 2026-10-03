@@ -15,7 +15,7 @@ export function About() {
     { icon: Puzzle, title: "Problem Solving", text: "Data structures, algorithms and clean system design." },
   ];
   return (
-    <Section id="about" eyebrow="01 / About" title="About Me">
+    <Section id="about" eyebrow="03 / About" title="About Me">
       <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
         <Reveal className="space-y-4 text-muted-foreground">
           <p>
@@ -134,7 +134,7 @@ export function Projects() {
   const [active, setActive] = useState<Project | null>(null);
   const [featured, ...rest] = projects;
   return (
-    <Section id="projects" eyebrow="03 / Work" title="Featured Projects" intro="Products I've designed and built end-to-end — from AI-powered mobile apps to logistics dashboards.">
+    <Section id="projects" eyebrow="01 / Work" title="Featured Projects" intro="Products I've designed and built end-to-end — from AI-powered mobile apps to logistics dashboards.">
       <Reveal>
         <article className="card-lift grid gap-8 rounded-2xl border bg-card p-5 sm:p-7 lg:grid-cols-[1.1fr_1fr]">
           <button onClick={() => setActive(featured)} className="text-left" aria-label={`Open ${featured.name} details`}><ProjectVisual p={featured} large /></button>
